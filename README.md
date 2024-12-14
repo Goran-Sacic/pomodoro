@@ -20,7 +20,7 @@ This Pomodoro app helps you manage your time effectively by breaking your work i
 
 ### Live Version
 
-Visit the app at [pomodoro-gs.netlify.app](pomodoro-gs.netlify.app).
+Visit the app at [pomodoro-gs.netlify.app](https://pomodoro-gs.netlify.app).
 
 ### Local Development
 
@@ -53,7 +53,7 @@ npm run dev
 
 ## Changelog
 
-- v0.1.0 (14-12-2024): Released beta version of the app. Details available on [Netlify pages](pomodoro-gs.netlify.app).
+- v0.1.0 (14-12-2024): Released beta version of the app. Details available on [Netlify pages](https://pomodoro-gs.netlify.app).
 - v0.1.1 (14-12-2024): Updated Next.js to the latest version (15.1.0) and updated config for MaterialUI since it would not deploy to Netlify otherwise.
 
 ## Next Steps
