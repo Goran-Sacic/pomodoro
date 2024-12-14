@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pomodoro App
+
+## Overview
+
+This Pomodoro app helps you manage your time effectively by breaking your work into intervals (Pomodoros) separated by short breaks. Ideal for enhancing productivity and focusing on tasks.
+
+## Versions
+
+- v0.1.0 (14-12-2024): Released beta version with initial features.
+- v0.1.1 (14-12-2024): Updated Next.js and Material UI configuration.
+
+## Features
+
+- Timer: Start, pause, and reset your Pomodoro sessions and breaks.
+- Break Management: Separate short breaks between Pomodoros and long breaks after a set number of Pomodoros.
+- Responsive Design: Works on various devices and screen sizes.
+- Material UI: Uses Material-UI components for a modern and clean UI/UX.
 
 ## Getting Started
 
-First, run the development server:
+### Live Version
+
+Visit the app at [pomodoro-gs.netlify.app](pomodoro-gs.netlify.app).
+
+### Local Development
+
+1. Prerequisites:
+
+- Node.js (v18.20.5 or higher)
+- npm (v10.8.2 or higher)
+- Git
+
+2. Clone the repository:
+
+```bash
+git clone https://github.com/Goran-Sacic/pomodoro.git
+cd pomodoro
+```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+4. Start the app:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. View the app in your browser: Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Changelog
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- v0.1.0 (14-12-2024): Released beta version of the app. Details available on [Netlify pages](pomodoro-gs.netlify.app).
+- v0.1.1 (14-12-2024): Updated Next.js to the latest version (15.1.0) and updated config for MaterialUI since it would not deploy to Netlify otherwise.
 
-## Learn More
+## Next Steps
 
-To learn more about Next.js, take a look at the following resources:
+ETA for further improvements: When it's done.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Feedback & Contribution
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Your feedback is welcome. Please open an issue on GitHub or leave me a message on my [portfolio website](https://www.goransacic.com/).
