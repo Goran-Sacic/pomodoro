@@ -1,0 +1,13 @@
+$primary-bg-color: rgb(15, 15, 15);
+$primary-button-bg-color: black;
+$primary-color: white;
+$border: 1px solid rgb(78, 78, 78);
+$border-radius: 10px;
+
+:export {
+	primaryBgColor: $primary-bg-color;
+	primaryButtonBgColor: $primary-button-bg-color;
+	primaryColor: $primary-color;
+	border: $border;
+	borderRadius: $border-radius;
+}

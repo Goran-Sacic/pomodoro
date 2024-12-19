@@ -8,6 +8,7 @@ This Pomodoro app helps you manage your time effectively by breaking your work i
 
 - v0.1.0 (14-12-2024): Released beta version with initial features.
 - v0.1.1 (14-12-2024): Updated Next.js and Material UI configuration.
+- v0.1.2 (19-12-2024): Various enhancements aimed at performance and graphical upgrades. Also added a task handler to manage tasks.
 
 ## Features
 
@@ -55,6 +56,7 @@ npm run dev
 
 - v0.1.0 (14-12-2024): Released beta version of the app. Details available on [Netlify pages](https://pomodoro-gs.netlify.app).
 - v0.1.1 (14-12-2024): Updated Next.js to the latest version (15.1.0) and updated config for MaterialUI since it would not deploy to Netlify otherwise.
+- v0.1.2 (19-12-2024): Refactored components to enhance performance. Added task component. Also performed various graphical upgrades (still not final).
 
 ## Next Steps
 

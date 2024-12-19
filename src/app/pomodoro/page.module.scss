@@ -1,0 +1,193 @@
+@use '../variables.module.scss' as variables;
+
+.timer {
+	background-color: variables.$primary-bg-color;
+	color: variables.$primary-color;
+	border: variables.$border;
+	border-radius: variables.$border-radius;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 80%;
+	max-width: 800px;
+}
+
+.sessionsIndicator {
+	font-size: 2em;
+	padding-top: 40px;
+}
+
+.display {
+	font-size: 7em;
+	font-family: monospace;
+	display: flex;
+	gap: 30px;
+	padding-top: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.display span {
+	text-align: center;
+	display: inline-block;
+}
+
+.timer button {
+	background-color: variables.$primary-button-bg-color;
+	color: variables.$primary-color;
+	border: variables.$border;
+	border-radius: variables.$border-radius;
+	height: 50px;
+	width: 180px;
+	font-size: 1.3em;
+	transition: border 0.3s;
+}
+
+.timer button:hover {
+	border: 1px solid white;
+}
+
+.timer button:disabled {
+	opacity: 0.5;
+	color: variables.$primary-color;
+	border: variables.$border;
+	border-radius: variables.$border-radius;
+}
+
+.controls {
+	width: 90%;
+	padding-top: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.controls div:nth-child(1) {
+	display: flex;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.controls div:nth-child(1) button {
+	width: 45%;
+	height: 80px;
+	font-size: 2em;
+}
+
+.controls div:nth-child(2) {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	gap: 20px;
+	padding: 40px 0px;
+	width: 100%;
+}
+
+.controls div:nth-child(2) button {
+	width: 30%;
+}
+
+.statsTracker {
+	background-color: variables.$primary-bg-color;
+	color: variables.$primary-color;
+	border: variables.$border;
+	border-radius: variables.$border-radius;
+	width: 100%;
+	max-width: 800px;
+	margin: 20px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	font-size: 1.4em;
+}
+
+.statsTracker button {
+	background-color: variables.$primary-button-bg-color;
+	color: variables.$primary-color;
+	border: variables.$border;
+	border-radius: variables.$border-radius;
+	transition: border 0.3s;
+	font-size: 1rem;
+	width: 20%;
+}
+
+.statsTracker button:hover {
+	border: 1px solid white;
+}
+
+.statsTrackerTitle {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.stats {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.individualStat {
+	display: flex;
+	width: 100%;
+	font-size: 1.1em;
+	justify-content: space-between;
+	border-bottom: variables.$border;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.statsControls {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	gap: 15px;
+}
+
+.log {
+	background-color: variables.$primary-bg-color;
+	color: variables.$primary-color;
+	border: variables.$border;
+	border-radius: variables.$border-radius;
+
+	width: 80%;
+	max-width: 800px;
+	padding: 20px;
+	font-size: 1.4em;
+}
+
+.logHeader {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logControls {
+	display: flex;
+	justify-content: flex-end;
+	width: 44%;
+	gap: 20px;
+}
+
+.logControls button {
+	background-color: variables.$primary-button-bg-color;
+	color: variables.$primary-color;
+	border: variables.$border;
+	border-radius: variables.$border-radius;
+	width: 45%;
+	font-size: 0.7em;
+	transition: border 0.3s;
+}
+
+.logControls button:hover {
+	border: 1px solid white;
+}
+
+.logControls button:disabled {
+	opacity: 0.5;
+	color: variables.$primary-color;
+	border: variables.$border;
+	border-radius: variables.$border-radius;
+}

@@ -8,13 +8,9 @@
 
 	justify-items: center;
 	min-height: 100svh;
-	padding: 80px;
+	padding-top: 80px;
 	gap: 64px;
 	font-family: var(--font-geist-sans);
-}
-
-.content {
-	/* margin: 10px; */
 }
 
 .pomodoro {
@@ -30,13 +26,6 @@
 	background-color: #383838;
 }
 
-/* .controls {
-	display: flex;
-	flex-direction: row;
-	gap: 30px;
-	border: 1px solid green;
-} */
-
 .controls button:disabled {
 	background-color: rgb(87, 87, 87);
 }
@@ -48,10 +37,6 @@
 .timer span {
 	text-align: left;
 }
-
-/* .timer span:last-of-type {
-	width: 37px;
-} */
 
 .pausedMessage {
 	margin: 30px 0px;
@@ -67,4 +52,43 @@
 
 .sessionsInfo {
 	margin: 20px;
+}
+
+.sessionsInfoOptions {
+	display: flex;
+	gap: 35px;
+}
+
+.sessionsInfoOptions button:disabled {
+	background: #eaeaea;
+	color: #c0c0c0;
+}
+
+.resetStatsConfirmationModal {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.resetStatsConfirmationModalBox {
+	background-color: black;
+	height: 200px;
+	width: 700px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+}
+
+.resetStatsConfirmationModalButtonContainer {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	margin: 20px 0px;
+}
+
+.resetStatsConfirmationModalBox button {
+	width: 200px;
+	height: 35px;
 }
