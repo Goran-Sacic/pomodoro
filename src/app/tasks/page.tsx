@@ -15,7 +15,7 @@ interface Task {
 
 interface CountTaskProps {
 	countTasksStat: (numberOfTasksCompleted: number) => void;
-	handleLog: (arg0: string) => void;
+	handleLog: (message: string) => void;
 }
 
 const Tasks = ({ countTasksStat, handleLog }: CountTaskProps) => {
