@@ -1,7 +1,7 @@
 'use client';
 
 import styles from './page.module.css';
-import { Pomodoro } from './pomodoro/page';
+import Pomodoro from './pomodoro/page';
 
 export default function Home() {
 	return (

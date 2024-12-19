@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import { useState, useEffect, useRef, memo } from 'react';
 import styles from './page.module.scss';
@@ -397,4 +397,4 @@ const Pomodoro = () => {
 	);
 };
 
-export { Pomodoro };
+export default Pomodoro;
