@@ -13,12 +13,13 @@ interface Task {
 	isEditing: boolean;
 }
 
-interface CountTaskProps {
+const Tasks = ({
+	countTasksStat,
+	handleLog,
+}: {
 	countTasksStat: (numberOfTasksCompleted: number) => void;
 	handleLog: (message: string) => void;
-}
-
-const Tasks = ({ countTasksStat, handleLog }: CountTaskProps) => {
+}) => {
 	const [task, setTask] = useState<string>('');
 	const [tasks, setTasks] = useState<Task[]>([]);
 	const [addingTask, setAddingTask] = useState<boolean>(false);
