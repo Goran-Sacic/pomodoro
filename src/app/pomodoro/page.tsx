@@ -1,3 +1,5 @@
+'use client'
+
 import { useState, useEffect, useRef, memo } from 'react';
 import styles from './page.module.scss';
 import { Button } from '@mui/material';

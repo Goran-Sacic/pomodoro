@@ -1,3 +1,5 @@
+'use client';
+
 import { useState, useRef, useEffect, useCallback } from 'react';
 import styles from './page.module.scss';
 import { v4 as uuidv4 } from 'uuid';
