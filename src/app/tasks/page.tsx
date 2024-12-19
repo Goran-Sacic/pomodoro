@@ -246,4 +246,4 @@ const Tasks = ({ countTasksStat, handleLog }: CountTaskProps) => {
 	);
 };
 
-export { Tasks };
+export default Tasks;

@@ -12,7 +12,7 @@ import {
 	Power,
 	PowerOff,
 } from 'lucide-react';
-import { Tasks } from '../tasks/page';
+import Tasks from '../tasks/page';
 
 interface Stats {
 	focusSessionsCompleted: number;
