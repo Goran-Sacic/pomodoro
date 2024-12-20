@@ -1,7 +1,7 @@
-/* 'use client';
+'use client';
 
 import { useState, useRef, useEffect, useCallback } from 'react';
-import styles from './page.module.scss';
+import styles from './tasks.module.scss';
 import { v4 as uuidv4 } from 'uuid';
 import { Button } from '@mui/material';
 import { Check, Pencil, Trash2, CirclePlus } from 'lucide-react';
@@ -251,4 +251,3 @@ const Tasks = ({
 };
 
 export default Tasks;
- */
