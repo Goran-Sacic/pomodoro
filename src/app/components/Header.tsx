@@ -13,7 +13,7 @@ const Header = () => {
 	return (
 		<>
 			<div className={styles.header}>
-				<h1 className={styles.headerTitle}>Pomodorko</h1>
+				<h1 className={styles.headerTitle}>Pomodoro</h1>
 				<div className={styles.options} onClick={handleOpen}>
 					<Info size={48} />
 				</div>
@@ -32,16 +32,16 @@ const Header = () => {
 							component='h2'
 							className={styles.modalTitle}
 						>
-							Pomodorko Features Overview
+							Pomodoro Features Overview
 						</Typography>
 						<Typography
 							component={'div'}
 							id='modal-modal-description'
 							className={styles.modalDescription}
 						>
-							Welcome to <strong>Pomodorko</strong>, your all-in-one
-							productivity app designed to help you stay focused and organized!
-							Here’s a quick rundown of everything you can do:
+							Welcome to <strong>Pomodoro</strong>, your all-in-one productivity
+							app designed to help you stay focused and organized! Here’s a
+							quick rundown of everything you can do:
 							<br />
 							<br />
 							<strong style={{ textDecoration: 'underline' }}>
@@ -129,7 +129,7 @@ const Header = () => {
 								</li>
 							</ul>
 							<br />
-							With <strong>Pomodorko</strong> you can maximize productivity,
+							With <strong>Pomodoro</strong> you can maximize productivity,
 							manage tasks efficiently and track your progress.
 						</Typography>
 						<div className={styles.modalControls}>
