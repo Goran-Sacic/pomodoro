@@ -376,27 +376,40 @@ const Pomodoro = () => {
 					<h1>Log</h1>
 					<div className={styles.logControls}>
 						{showLog && (
-							<Button onClick={handleClearLog} disabled={log.length === 0}>
+							<Button
+								onClick={() => {
+									setShowLog(!showLog);
+									handleClearLog();
+								}}
+								disabled={log.length === 0}
+							>
 								Clear log
 							</Button>
 						)}
-						<Button onClick={() => setShowLog(!showLog)}>
+						<Button
+							onClick={() => {
+								handleLog(`${!showLog ? 'Viewing log.' : 'Closing log.'}`);
+								setShowLog(!showLog);
+							}}
+						>
 							{!showLog ? 'Show log' : 'Hide log'}
 						</Button>
 					</div>
 				</div>
-				{log.length === 0 && showLog && (
-					<p style={{ marginTop: '10px' }}>Log is empty.</p>
-				)}
 				{showLog && (
-					<ul>
-						{log.map((log, index) => (
-							<li
-								key={index}
-								style={{ listStyle: 'none' }}
-							>{`${log.timestamp}: ${log.action}`}</li>
-						))}
-					</ul>
+					<div className={styles.logList}>
+						{log.length === 0 && (
+							<p style={{ marginTop: '10px' }}>Log is empty.</p>
+						)}
+						<ul>
+							{log.map((log, index) => (
+								<li
+									key={index}
+									style={{ listStyle: 'none' }}
+								>{`${log.timestamp}: ${log.action}`}</li>
+							))}
+						</ul>
+					</div>
 				)}
 			</div>
 		</>

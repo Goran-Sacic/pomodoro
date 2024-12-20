@@ -34,7 +34,7 @@
 
 .timer button {
 	background-color: variables.$primary-button-bg-color;
-	color: variables.$primary-color;
+	color: variables.$primary-button-color;
 	border: variables.$border;
 	border-radius: variables.$border-radius;
 	height: 50px;
@@ -44,7 +44,7 @@
 }
 
 .timer button:hover {
-	border: 1px solid white;
+	background-color: variables.$primary-button-bg-color-hover;
 }
 
 .timer button:disabled {
@@ -104,7 +104,7 @@
 
 .statsTracker button {
 	background-color: variables.$primary-button-bg-color;
-	color: variables.$primary-color;
+	color: variables.$primary-button-color;
 	border: variables.$border;
 	border-radius: variables.$border-radius;
 	transition: border 0.3s;
@@ -113,7 +113,7 @@
 }
 
 .statsTracker button:hover {
-	border: 1px solid white;
+	background-color: variables.$primary-button-bg-color-hover;
 }
 
 .statsTrackerTitle {
@@ -164,6 +164,10 @@
 	justify-content: space-between;
 }
 
+.logList {
+	margin-top: 20px;
+}
+
 .logControls {
 	display: flex;
 	justify-content: flex-end;
@@ -173,7 +177,7 @@
 
 .logControls button {
 	background-color: variables.$primary-button-bg-color;
-	color: variables.$primary-color;
+	color: variables.$primary-button-color;
 	border: variables.$border;
 	border-radius: variables.$border-radius;
 	width: 45%;
@@ -182,12 +186,12 @@
 }
 
 .logControls button:hover {
-	border: 1px solid white;
+	background-color: variables.$primary-button-bg-color-hover;
 }
 
 .logControls button:disabled {
 	opacity: 0.5;
-	color: variables.$primary-color;
+	color: variables.$primary-button-color;
 	border: variables.$border;
 	border-radius: variables.$border-radius;
 }

@@ -1,7 +1,7 @@
 @use '../../variables.module.scss' as variables;
 
 .tasks {
-	background-color: rgb(15, 15, 15);
+	background-color: variables.$primary-bg-color;
 	color: variables.$primary-color;
 	border: variables.$border;
 	border-radius: variables.$border-radius;
@@ -21,10 +21,11 @@
 	align-items: center;
 	justify-content: space-between;
 	width: 100%;
-	padding: 20px 0px;
+	/* padding: 20px 0px; */
 	gap: 10px;
 	align-items: flex-end;
 	margin: 20px 0px;
+	height: 150px;
 }
 
 .tasks form span {
@@ -40,10 +41,13 @@
 
 .tasks form span input {
 	font-size: 1.3em;
-	background-color: variables.$primary-bg-color;
-	border: none;
-	border-bottom: variables.$border;
+	background-color: variables.$primary-button-bg-color;
+	/* border: variables.$border; */
+	border-radius: variables.$border-radius;
+	color: variables.$primary-button-color;
+	padding: 20px;
 	width: 100%;
+	height: 98px;
 }
 
 .tasks form span label {
@@ -53,7 +57,7 @@
 
 .tasks form span button {
 	background-color: variables.$primary-button-bg-color;
-	color: variables.$primary-color;
+	color: variables.$primary-button-color;
 	border: variables.$border;
 	border-radius: variables.$border-radius;
 	width: 20%;
@@ -62,7 +66,7 @@
 }
 
 .tasks form span button:hover {
-	border: 1px solid white;
+	background-color: variables.$primary-button-bg-color-hover;
 }
 
 .tasks form input:focus {
@@ -130,7 +134,7 @@
 
 .buttonTaskCompleted {
 	background-color: transparent;
-	color: lightgreen;
+	color: rgb(15, 158, 15);
 	border: none;
 	cursor: pointer;
 	padding-left: 10px;
@@ -149,7 +153,7 @@
 
 .completedTaskText {
 	text-decoration: line-through;
-	color: lightgreen;
+	color: rgb(15, 158, 15);
 	font-size: 1.3em;
 }
 
@@ -159,28 +163,29 @@
 
 .showAddTaskForm {
 	width: 100%;
+	margin: 0 0;
 }
 
 .showAddTaskForm button {
 	background-color: variables.$primary-button-bg-color;
-	color: variables.$primary-color;
+	color: variables.$primary-button-color;
 	border: variables.$border;
 	border-radius: variables.$border-radius;
 	width: 100%;
-	height: 100px;
-	margin: 28px 0px;
+	height: 98px;
+	margin: 20px 0px;
 	font-size: 1.8em;
 	transition: border 0.3s;
 	cursor: pointer;
 }
 
 .showAddTaskForm button:hover {
-	border: 1px solid white;
+	background-color: variables.$primary-button-bg-color-hover;
 }
 
 .successMessage {
 	font-size: 1.5em;
-	color: lightgreen;
+	color: rgb(15, 158, 15);
 	width: 100%;
 	max-width: 800px;
 	margin-top: 20px;

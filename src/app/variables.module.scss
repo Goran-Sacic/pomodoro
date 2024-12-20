@@ -1,13 +1,19 @@
-$primary-bg-color: rgb(15, 15, 15);
-$primary-button-bg-color: black;
-$primary-color: white;
+$primary-app-bg-color: rgb(19, 19, 1);
+$primary-bg-color: rgba(225, 239, 230);
+$primary-color: rgb(19, 19, 1);
+$primary-button-bg-color: rgb(93, 55, 110);
+$primary-button-bg-color-hover: purple;
+$primary-button-color: rgb(225, 239, 230);
 $border: 1px solid rgb(78, 78, 78);
 $border-radius: 10px;
 
 :export {
+	primaryAppBgColor: $primary-app-bg-color;
 	primaryBgColor: $primary-bg-color;
-	primaryButtonBgColor: $primary-button-bg-color;
 	primaryColor: $primary-color;
+	primaryButtonBgColor: $primary-button-bg-color;
+	primaryButtonBgColorHover: $primary-button-bg-color-hover;
+	primaryButtonColor: $primary-button-color;
 	border: $border;
 	borderRadius: $border-radius;
 }

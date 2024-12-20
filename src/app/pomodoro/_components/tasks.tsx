@@ -65,7 +65,7 @@ const Tasks = ({
 		const newList = tasks.map((task) => {
 			if (task.taskId === taskId) {
 				handleLog(
-					`Marked a task ${task.completed ? 'completed' : 'not completed'}.`
+					`Marked a task ${!task.completed ? 'completed' : 'not completed'}.`
 				);
 				return { ...task, completed: !task.completed };
 			} else return task;
@@ -217,6 +217,8 @@ const Tasks = ({
 								value={task}
 								ref={addNewTaskRef}
 								placeholder='Enter new task...'
+								className={styles.weirdInput}
+								autoComplete='off'
 							/>
 						</span>
 						<span>

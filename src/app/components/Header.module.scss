@@ -1,0 +1,74 @@
+@use '../variables.module.scss' as variables;
+
+.header {
+	background-color: variables.$primary-bg-color;
+	color: variables.$primary-color;
+	border: variables.$border;
+	border-radius: variables.$border-radius;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 800px;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.headerTitle {
+	font-size: 4em;
+}
+
+.options {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	transition: transform 0.3s;
+}
+
+.options:hover {
+	transform: scale(1.2);
+}
+
+.modalBox {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 700px;
+	background-color: #fff;
+	border: 2px solid #000;
+	box-shadow: 24px 24px 8px rgba(0, 0, 0, 0.2);
+	padding: 16px;
+}
+
+.modalTitle {
+	font-size: 1.8rem !important;
+	font-weight: bold;
+	padding: 20px;
+}
+
+.modalDescription {
+	font-size: 1rem;
+	color: #333333;
+	padding: 20px;
+}
+
+.modalControls {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.closeModalButton {
+	background-color: variables.$primary-button-bg-color;
+	color: variables.$primary-button-color;
+	border: variables.$border;
+	border-radius: variables.$border-radius;
+	height: 50px;
+	width: 180px;
+	font-size: 1.3em;
+	transition: border 0.3s;
+	cursor: pointer;
+}
+
+.closeModalButton:hover {
+	background-color: variables.$primary-button-bg-color-hover;
+}

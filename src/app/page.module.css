@@ -1,94 +1,14 @@
 .page {
-	--gray-rgb: 0, 0, 0;
+	/* --gray-rgb: 0, 0, 0;
 	--gray-alpha-200: rgba(var(--gray-rgb), 0.08);
-	--gray-alpha-100: rgba(var(--gray-rgb), 0.05);
+	--gray-alpha-100: rgba(var(--gray-rgb), 0.05); */
 
-	--button-primary-hover: #383838;
-	--button-secondary-hover: #f2f2f2;
+	/* --button-primary-hover: #383838;
+	--button-secondary-hover: #f2f2f2; */
 
 	justify-items: center;
 	min-height: 100svh;
-	padding-top: 80px;
+	padding-top: 40px;
 	gap: 64px;
-	font-family: var(--font-geist-sans);
-}
-
-.pomodoro {
-	margin: 20px 0px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	padding: 20px;
-	gap: 20px;
-	width: 100%;
-	color: white;
-	background-color: #383838;
-}
-
-.controls button:disabled {
-	background-color: rgb(87, 87, 87);
-}
-
-.timer {
-	display: flex;
-}
-
-.timer span {
-	text-align: left;
-}
-
-.pausedMessage {
-	margin: 30px 0px;
-	height: 60px;
-	display: flex;
-	align-items: flex-start;
-}
-
-.description {
-	color: white;
-	background-color: #383838;
-}
-
-.sessionsInfo {
-	margin: 20px;
-}
-
-.sessionsInfoOptions {
-	display: flex;
-	gap: 35px;
-}
-
-.sessionsInfoOptions button:disabled {
-	background: #eaeaea;
-	color: #c0c0c0;
-}
-
-.resetStatsConfirmationModal {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.resetStatsConfirmationModalBox {
-	background-color: black;
-	height: 200px;
-	width: 700px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	padding: 20px;
-}
-
-.resetStatsConfirmationModalButtonContainer {
-	display: flex;
-	justify-content: space-around;
-	width: 100%;
-	margin: 20px 0px;
-}
-
-.resetStatsConfirmationModalBox button {
-	width: 200px;
-	height: 35px;
+	/* font-family: var(--font-geist-sans); */
 }
