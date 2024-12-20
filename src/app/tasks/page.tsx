@@ -13,13 +13,12 @@ interface Task {
 	isEditing: boolean;
 }
 
-const Tasks = ({
-	countTasksStat,
-	handleLog,
-}: {
-	countTasksStat: (numberOfTasksCompleted: number) => void;
+interface TasksProps {
+	handleCountTasksStat: (numberOfTasksCompleted: number) => void;
 	handleLog: (message: string) => void;
-}) => {
+}
+
+const Tasks: React.FC<TasksProps> = ({ handleCountTasksStat, handleLog }) => {
 	const [task, setTask] = useState<string>('');
 	const [tasks, setTasks] = useState<Task[]>([]);
 	const [addingTask, setAddingTask] = useState<boolean>(false);
@@ -106,6 +105,7 @@ const Tasks = ({
 			handleLog('Finished editing the task.');
 			setTasks(updatedTasks);
 		},
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 		[tasks]
 	);
 
@@ -132,11 +132,13 @@ const Tasks = ({
 		} else if (tasks.length === 0) {
 			setShowSuccessMessage(false);
 		} else setShowSuccessMessage(true);
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [tasks]);
 
 	useEffect(() => {
 		const completedTasksCount = tasks.filter((task) => task.completed).length;
-		countTasksStat(completedTasksCount);
+		handleCountTasksStat(completedTasksCount);
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [tasks]);
 
 	return (

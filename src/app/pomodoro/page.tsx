@@ -197,12 +197,14 @@ const Pomodoro = () => {
 		}
 
 		return () => clearInterval(intervalRef.current!);
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [startTimer]);
 
 	useEffect(() => {
 		if (timer === 0 && !skipTimerButtonPressed) {
 			handleStats();
 		}
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [timer]);
 
 	const handleStartOrPauseTimer = () => {
@@ -357,7 +359,11 @@ const Pomodoro = () => {
 					</div>
 				</div>
 			</div>
-			<Tasks countTasksStat={handleCountTasksStat} handleLog={handleLog} />
+			{/* <Tasks countTasksStat={handleCountTasksStat} handleLog={handleLog} /> */}
+			<Tasks
+				handleCountTasksStat={handleCountTasksStat}
+				handleLog={handleLog}
+			/>
 			<StatsTracker
 				stats={allStats}
 				showStats={showStats}
